@@ -1,0 +1,51 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        color_good = "#11ab00"
+        interval = 5
+}
+
+order += "disk /"
+order += "wireless wlan0"
+order += "battery 0"
+order += "memory"
+order += "cpu_usage"
+order += "tztime local"
+
+wireless wlan0 {
+        min_width = 400
+        align = center
+        format_up = "(%essid) %ip"
+        format_down = "нет wi-fi"
+}
+
+
+disk /{
+        min_width = 150
+        align = center
+        format="%avail"
+}
+
+cpu_usage {
+        align = center
+        min_width = 50
+        format = "%usage"
+}
+
+battery 0 {
+        align = center
+        min_width = 100
+        format = "%status %percentage"
+}
+
+memory {
+        align = center
+        min_width = 150
+        format = "%used"
+}
+
+tztime local {
+        align = center
+        min_width = 100
+        format = "%d-%m-%Y %H:%M"
+}

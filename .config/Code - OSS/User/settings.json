@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "window.zoomLevel": 3,
+    "editor.fontFamily": "'Source Code Pro Medium', 'monospace', monospace",
+    "cSpell.language": "en,ru",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "python.languageServer": "Pylance",
+    "explorer.confirmDelete": false
+}
