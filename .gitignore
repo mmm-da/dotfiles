@@ -1,0 +1,16 @@
+.config\/Code - OSS\/* 
+.config\/kicad\/* 
+.config\/libreoffice\/* 
+.config\/pulse\/*
+.config\/discord\/*
+.config\/i3status\/*
+.config\/Thunar\/*
+.config\/systemd\/*
+.config\/Electron\/*
+.config\/chromium\/*
+.config\/xfce4\/*
+
+.config\/Code - OSS\/User\/workspaceStorage\/*
+
+!.config\/Code - OSS\/User
+!.config\/Code - OSS\/storage.json

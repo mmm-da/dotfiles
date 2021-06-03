@@ -1,0 +1,67 @@
+{
+    "layer": "top", 
+    "position": "bottom",
+
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "cpu", "battery", "tray"],
+    
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "backlight#icon": {
+        "format": "{icon}",
+        "format-icons": ["", ""],
+        "on-click": "ctl-backlight.waybar.sh down"
+    },
+    "backlight#value": {
+        "format": "{percent}",
+        "on-click": "ctl-backlight.waybar.sh up"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "format-plugged": "",
+        "format-alt": "{capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "↑ {bandwidthUpBits} ↓ {bandwidthDownBits}",
+        "format-ethernet": "",
+        "format-linked": "(No IP) ",
+        "format-disconnected": "no connect",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "interval": 1,
+        "signal": 1
+    },
+
+}

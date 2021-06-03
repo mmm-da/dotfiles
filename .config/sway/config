@@ -7,6 +7,9 @@ input * {
 # Терминал
 set $term alacritty
 
+# Браузер
+set $internet chromium
+
 # Меню приложений
 set $menu dmenu_run
 
@@ -24,34 +27,32 @@ set $super Mod3
 font pango: Source Code Pro 14
 
 # Рамки между окнами
-gaps inner 32
+gaps inner 16
 
 # Отключение заголовков окон в тайлинговом режиме
-default_border pixel 8
+default_border pixel 6
 
+title_align center
+
+client.focused          #2E3440 #2E3440 #ECEFF4 #8FBCBB #2E3440
+client.focused_inactive #2E3440 #2E3440 #ECEFF4 #8FBCBB #D8DEE9
+client.unfocused        #2E3440 #ECEFF4 #2E3440 #8FBCBB #D8DEE9
+ 
 bar {
-    position bottom
-    font pango: Source Code Pro 14
-    status_command  i3status
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    swaybar_command waybar
 }
 
-output * bg #fefefe solid_color
+output * bg #ECEFF4 solid_color
 
 floating_modifier $mod normal
 
-bindsym $super+t exec $term -e zsh
+bindsym $super+t exec $term
 bindsym $mod+t exec $term
+bindsym $mod+i exec $internet
 bindsym $mod+F4 kill
 bindsym $mod+d exec $menu 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
-
-
 
 # Move your focus around
 bindsym $mod+$left focus left

@@ -1,0 +1,6 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-UY9D30.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-UY9D30.desktop;
+image/png=chromium.desktop;ida.desktop;
