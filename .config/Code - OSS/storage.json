@@ -3,6 +3,12 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///home/mda/git/dotfiles"
+            },
+            {
+                "folderUri": "file:///home/mda/.config"
+            },
+            {
                 "folderUri": "file:///home/mda/git/vk2tg-wall-streamer"
             },
             {
@@ -19,9 +25,6 @@
             },
             {
                 "folderUri": "file:///home/mda/git/vkr-report"
-            },
-            {
-                "folderUri": "file:///home/mda/.config"
             },
             {
                 "folderUri": "file:///home/mda/.config/i3status"
@@ -60,14 +63,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/mda/git/vk2tg-wall-streamer",
-            "backupPath": "/home/mda/.config/Code - OSS/Backups/e20282c308519d0ed2a867972ed2d25f",
+            "folder": "file:///home/mda/git/dotfiles",
+            "backupPath": "/home/mda/.config/Code - OSS/Backups/bb7668f9051234b48d0a4682c633e626",
             "uiState": {
                 "mode": 0,
-                "x": 974,
-                "y": 22,
-                "width": 924,
-                "height": 918
+                "x": 448,
+                "y": 156,
+                "width": 1024,
+                "height": 768
             }
         },
         "openedWindows": []
@@ -116,7 +119,29 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/mda/git/vk2tg-wall-streamer",
+                                        "fsPath": "/home/mda/git/dotfiles",
+                                        "external": "file:///home/mda/git/dotfiles",
+                                        "path": "/home/mda/git/dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/mda/.config",
+                                        "path": "/home/mda/.config",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/mda/git/vk2tg-wall-streamer",
                                         "path": "/home/mda/git/vk2tg-wall-streamer",
                                         "scheme": "file"
@@ -178,17 +203,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/git/vkr-report"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/mda/.config",
-                                        "path": "/home/mda/.config",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -355,8 +369,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
