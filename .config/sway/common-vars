@@ -1,0 +1,12 @@
+# Терминал
+set $term alacritty
+
+# Браузер
+set $internet chromium
+
+# Меню приложений
+set $menu dmenu_run
+
+# Функциональная mod клавиша - Alt
+set $alt Mod1
+set $super Mod3

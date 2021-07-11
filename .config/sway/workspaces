@@ -1,0 +1,11 @@
+workspace 1
+exec $term
+
+workspace 2
+exec $internet
+
+workspace 3
+exec telegram-desktop
+
+workspace 4
+exec code

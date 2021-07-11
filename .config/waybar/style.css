@@ -1,6 +1,6 @@
 * {
     min-height: 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     font-family: "Source Code Pro";
     border: none;
@@ -40,7 +40,7 @@
   }
   
   #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #BF616A;
   }
   
   #mode {
@@ -68,15 +68,18 @@
   #mode,
   #idle_inhibitor,
   #mpd,
+  #disk,
+  #custom-alsa,
   #custom-logo,
   #custom-emailicon,
   #custom-unreademail,
   #custom-pacman-package-count,
   #custom-icon-cube {
-    margin: 16px 0px 16px 0px;
-    padding: 0.5rem 0.9rem;
-    color: #d8dee9;
-    background: #2e3440;
+    margin: 16px 16px 16px 16px;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    color: #282a36;
+    background: #d8dee9;
   }
   
   #clock {
@@ -91,62 +94,32 @@
     }
   }
   
-  #battery.critical:not(.charging) {
+  #battery.charging {
+    background-color: #A3BE8C;
+  }
+
+  #battery.warning {
+    background-color: #EBCB8B;
+  }
+
+  #battery.critical {
     color: #ffffff;
-    background-color: #f53c3c;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    background-color: #BF616A;
   }
   
   label:focus {
     background-color: #2e3440;
   }
   
-  
-  #backlight.icon {
-    color: #2e3440;
-    background: #d8dee9;
-  }
-  
-  #backlight.value {
-    min-width: 20px;
-  }
-  
   #network {
-    color: #d8dee9;
+    color: #2e3440;
   }
   
   #network.disconnected {
-    color: #ff0000;
-  }
-  
-  #pulseaudio.icon {
-    color: #2e3440;
-    background: #d8dee9;
-  }
-  
-  #pulseaudio.muted.icon {
-    background-color: gray;
-    /*color: #2a5c45;*/
-  }
-  
-  #custom-media {
-    min-width: 100px;
-    color: #2a5c45;
-    background-color: #66cc99;
-  }
-  
-  #custom-media.custom-spotify {
-    background-color: #66cc99;
-  }
-  
-  #custom-media.custom-vlc {
-    background-color: #ffa000;
+    color: #ffffff;
+    background-color: #BF616A;
   }
   
   #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: #D08770;
   }

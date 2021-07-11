@@ -6,62 +6,76 @@
         "sway/workspaces",
         "sway/mode"
     ],
+
     "modules-center": ["clock"],
-    "modules-right": ["network", "cpu", "battery", "tray"],
-    
+    "modules-right": ["network", "cpu", "memory", "disk", "battery","custom/alsa", "tray"],
+
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
 
+    "disk": {
+        "interval": 30,
+        "format": "💽 {free}",
+        "path": "/"
+    },
+
     "tray": {
-        "icon-size": 21,
+        "icon-size": 35,
         "spacing": 10
     },
+
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d %B %Y}"
     },
+
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "CPU: {usage}%",
+        "tooltip": true
     },
+
     "memory": {
-        "format": "{}% "
+        "format": "RAM: {used:0.1f}Gb",
+        "tooltip": true
     },
+
     "temperature": {
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format": "{temperatureC}°C"
     },
-    "backlight#icon": {
-        "format": "{icon}",
-        "format-icons": ["", ""],
-        "on-click": "ctl-backlight.waybar.sh down"
-    },
-    "backlight#value": {
-        "format": "{percent}",
-        "on-click": "ctl-backlight.waybar.sh up"
-    },
+
     "battery": {
         "states": {
             "good": 95,
-            "warning": 30,
+            "warning": 40,
             "critical": 15
         },
-        "format": "{capacity}%",
-        "format-charging": "{capacity}%",
-        "format-plugged": "",
-        "format-alt": "{capacity}%",
+        "format": "🔋{capacity}%",
+        "format-charging": "🔌{capacity}%",
+        "format-plugged": "🔌",
+        "format-alt": "🔋{capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
+ 
     "network": {
-        "format-wifi": "↑ {bandwidthUpBits} ↓ {bandwidthDownBits}",
-        "format-ethernet": "",
-        "format-linked": "(No IP) ",
-        "format-disconnected": "no connect",
+        "format-wifi": "↓ {bandwidthDownBits}",
+        "format-ethernet": "",
+        "format-linked": "no IP",
+        "format-disconnected": "",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "interval": 1,
+        "tooltip-format": "",
+        "tooltip-format-wifi": "↑ {bandwidthUpBits} ↓ {bandwidthDownBits}",
+        "interval": 3,
         "signal": 1
     },
+
+    "custom/alsa": {
+        "exec": "~/.config/waybar/alsa_volume.py",
+        "signal": 11,
+        "interval": 1000,
+        "tooltip": false
+    },
+
 
 }

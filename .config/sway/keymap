@@ -1,0 +1,93 @@
+include ./common-vars
+
+# Смена раскладки о капсу
+input * {
+    xkb_layout "us,ru"
+    xkb_options "grp:caps_toggle"
+}
+
+# Управление громкостью через PulseAudio.
+bindsym --locked XF86AudioLowerVolume exec amixer set Master 5%- && pkill -x -RTMIN+11 waybar
+bindsym --locked XF86AudioRaiseVolume exec amixer set Master 5%+ && pkill -x -RTMIN+11 waybar
+bindsym --locked XF86AudioMute exec amixer set Master toggle && pkill -x -RTMIN+11 waybar
+
+# Скриншоты
+bindsym --to-code $alt+p exec grim - | wl-copy  
+bindsym --to-code $alt+Shift+p exec grim -g "$(slurp -d)" - | wl-copy  
+
+# Горячие клавиши для приложений
+bindsym --to-code $super+t exec $term
+bindsym --to-code $alt+t exec $term
+bindsym --to-code $alt+i exec $internet
+bindsym --to-code $alt+d exec $menu 
+
+# Alt F4
+bindsym $alt+F4 kill
+
+# Неработающий рестарт оконного менеджера
+bindsym --to-code $alt+Shift+c reload
+
+# Неработающий рестарт оконного менеджера
+bindsym --to-code $alt+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+# Переключение фокуса на стрелки
+bindsym $alt+Left focus left
+bindsym $alt+Down focus down
+bindsym $alt+Up focus up
+bindsym $alt+Right focus right
+
+# Перемещение окна на стрелки
+bindsym $alt+Shift+Left move left
+bindsym $alt+Shift+Down move down
+bindsym $alt+Shift+Up move up
+bindsym $alt+Shift+Right move right
+
+# Аналог горячих клавиш в не тайловых оконных менеджерах
+bindsym $super+Left move left
+bindsym $super+Down layout toggle split
+bindsym $super+Up layout tabbed
+bindsym $super+Right move right
+
+
+# Workspaces:
+# Switch to workspace
+bindsym $alt+1 workspace number 1
+bindsym $alt+2 workspace number 2
+bindsym $alt+3 workspace number 3
+bindsym $alt+4 workspace number 4
+bindsym $alt+5 workspace number 5
+bindsym $alt+6 workspace number 6
+bindsym $alt+7 workspace number 7
+bindsym $alt+8 workspace number 8
+bindsym $alt+9 workspace number 9
+bindsym $alt+0 workspace number 10
+# Move focused container to workspace
+bindsym $alt+Shift+1 move container to workspace number 1
+bindsym $alt+Shift+2 move container to workspace number 2
+bindsym $alt+Shift+3 move container to workspace number 3
+bindsym $alt+Shift+4 move container to workspace number 4
+bindsym $alt+Shift+5 move container to workspace number 5
+bindsym $alt+Shift+6 move container to workspace number 6
+bindsym $alt+Shift+7 move container to workspace number 7
+bindsym $alt+Shift+8 move container to workspace number 8
+bindsym $alt+Shift+9 move container to workspace number 9
+bindsym $alt+Shift+0 move container to workspace number 10
+
+bindsym $alt+b splith
+bindsym $alt+v splitv
+
+bindsym $alt+s layout stacking
+bindsym $alt+w layout tabbed
+bindsym $alt+e layout toggle split
+
+bindsym $alt+f fullscreen
+
+bindsym $alt+Shift+space floating toggle
+
+bindsym $alt+space focus mode_toggle
+
+bindsym $alt+a focus parent
+
+bindsym $alt+Shift+minus move scratchpad
+
+bindsym $alt+minus scratchpad show

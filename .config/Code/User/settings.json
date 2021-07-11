@@ -1,0 +1,15 @@
+{
+    "window.zoomLevel": 2,
+    "editor.fontFamily": "'Source Code Pro Medium', 'monospace', monospace",
+    "cSpell.language": "en,ru",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "python.languageServer": "Pylance",
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Nord Light",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    }
+}
