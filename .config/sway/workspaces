@@ -1,5 +1,6 @@
 workspace 1
 exec $term
+exec nm-applet --indicator
 
 workspace 2
 exec $internet
