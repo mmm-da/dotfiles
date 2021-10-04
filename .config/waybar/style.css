@@ -20,7 +20,7 @@
   }
   
   #workspaces button {
-    margin: 16px 0px 16px 24px;
+    margin: 0px 0px 16px 16px;
     padding: 16px;
     border-radius: 12px;
     color: #E5E9F0;
@@ -50,7 +50,7 @@
   }
 
   #clock{
-    margin: 16px 0px 16px 0px;
+    margin: 0px 0px 16px 0px;
     padding: 16px;
     border-radius: 12px;
   }
@@ -75,7 +75,7 @@
   #custom-unreademail,
   #custom-pacman-package-count,
   #custom-icon-cube {
-    margin: 16px 16px 16px 16px;
+    margin: 0px 16px 16px 16px;
     border-radius: 12px;
     padding: 0.5rem 1rem;
     color: #282a36;

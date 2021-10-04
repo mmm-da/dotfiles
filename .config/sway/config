@@ -1,20 +1,16 @@
 include ./common-vars
 include ./keymap
 include ./workspaces
-
-
+include ./pointers
 
 # Системный шрифт
 font pango: Source Code Pro 14
-
 
 # Рамки между окнами
 gaps inner 16
 
 # Отключение заголовков окон в тайлинговом режиме
 default_border pixel 6
-
-
 
 title_align center
 
@@ -27,9 +23,10 @@ bar {
 }
 
 output * bg #ECEFF4 solid_color
+output HDMI-A-1 pos 0 0 mode 1920x1080
+output eDP-1 pos 1920 550 mode 1920x1080
 
 floating_modifier $alt normal
-
 
 mode "resize" {
     bindsym Left resize shrink width 10px
@@ -41,6 +38,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym $alt+r mode "resize"
+#Включаем демона уведомлений
+exec mako
 
 include /etc/sway/config.d/*

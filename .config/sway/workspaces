@@ -1,12 +1,20 @@
-workspace 1
-exec $term
+workspace 1 output eDP-1
 exec nm-applet --indicator
+exec $term
 
-workspace 2
+workspace 2 
 exec $internet
 
-workspace 3
+workspace 3 
+exec $term 
+
+workspace 4 
 exec telegram-desktop
 
-workspace 4
+workspace 5 
 exec code
+
+workspace 99 output HDMI-A-1
+exec thunderbird
+
+workspace 1 output eDP-1
