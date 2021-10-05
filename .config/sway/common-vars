@@ -5,7 +5,7 @@ set $term alacritty
 set $internet chromium
 
 # Меню приложений
-set $menu dmenu_run
+set $menu dmenu_run -fn "Source Code Pro-16" -nb "#2E3440" -nf "#E5E9F0" -sb "#D8DEE9" -sf "#2E3440"
 
 # Функциональная mod клавиша - Alt
 set $alt Mod1
