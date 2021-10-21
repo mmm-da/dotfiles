@@ -75,7 +75,7 @@
   #custom-unreademail,
   #custom-pacman-package-count,
   #custom-icon-cube {
-    margin: 0px 16px 16px 16px;
+    margin: 0px 16px 16px 0px;
     border-radius: 12px;
     padding: 0.5rem 1rem;
     color: #282a36;

@@ -88,12 +88,4 @@
         "signal": 1
     },
 
-    "custom/alsa": {
-        "exec": "~/.config/waybar/alsa_volume.py",
-        "signal": 11,
-        "interval": 1000,
-        "tooltip": false
-    },
-
-
 }
