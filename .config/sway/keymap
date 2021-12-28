@@ -71,7 +71,6 @@ bindsym --to-code $alt+Shift+9 move container to workspace number 9
 bindsym --to-code $alt+Shift+0 move container to workspace number 10
 bindsym --to-code $alt+Shift+grave move container to workspace number 99
 
-bindsym --to-code $alt+r mode "resize"
 bindsym --to-code $alt+b splith
 bindsym --to-code $alt+v splitv
 
