@@ -1,4 +1,5 @@
 .config\/Code - OSS\/* 
+.config\/Code\/* 
 .config\/kicad\/* 
 .config\/libreoffice\/* 
 .config\/pulse\/*
@@ -10,7 +11,8 @@
 .config\/chromium\/*
 .config\/xfce4\/*
 
-.config\/Code - OSS\/User\/workspaceStorage\/*
+!.config\/Code\/User\/settings.json
+!.config\/Code\/storage.json
 
-!.config\/Code - OSS\/User
+!.config\/Code - OSS\/User\/settings.json
 !.config\/Code - OSS\/storage.json
