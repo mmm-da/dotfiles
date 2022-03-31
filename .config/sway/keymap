@@ -8,7 +8,7 @@ input * {
 
 # Скриншоты
 bindsym --to-code $alt+p exec grim - | wl-copy -t image/png 
-bindsym --to-code $alt+Shift+p exec grim -g "$(slurp -d)" - | wl-copy -t image/png
+bindsym --to-code $alt+Shift+p exec grim -g "$(slurp -d)" - | swappy -f -
 
 bindsym --to-code Print exec grim - | wl-copy -t image/png 
 bindsym --to-code Shift+Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png

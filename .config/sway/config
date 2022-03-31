@@ -23,8 +23,8 @@ bar {
 }
 
 output * bg #ECEFF4 solid_color
-output HDMI-A-1 pos 0 0 mode 1920x1080
-output eDP-1 pos 1920 550 mode 1920x1080
+output HDMI-A-1 pos 0 0  mode 1920x1080
+output eDP-1 pos 0 1080 mode 1920x1080
 
 floating_modifier $alt normal
 
