@@ -2,7 +2,7 @@
 set $term alacritty
 
 # Браузер
-set $internet chromium
+set $internet chromium --enable-logging=stderr --v=1  2>&1
 
 # Меню приложений
 set $menu dmenu_run -fn "Source Code Pro-16" -nb "#2E3440" -nf "#E5E9F0" -sb "#D8DEE9" -sf "#2E3440"

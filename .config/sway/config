@@ -7,7 +7,7 @@ include ./pointers
 font pango: Source Code Pro 14
 
 # Рамки между окнами
-gaps inner 16
+gaps inner 0
 
 # Отключение заголовков окон в тайлинговом режиме
 default_border pixel 6
@@ -25,6 +25,7 @@ bar {
 output * bg #ECEFF4 solid_color
 output HDMI-A-1 pos 0 0  mode 1920x1080
 output eDP-1 pos 0 1080 mode 1920x1080
+#output eDP-1 pos 0 0 mode 1920x1080 layout none mirror HDMI-A-1
 
 floating_modifier $alt normal
 
@@ -42,3 +43,8 @@ mode "resize" {
 exec mako
 
 include /etc/sway/config.d/*
+
+#Полоса статуса для громкости и яркости
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob

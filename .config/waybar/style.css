@@ -31,8 +31,8 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #E5E9F0;
-  background: #2E3440;
+  color: #2E3440;
+  background: #ECEFF4;
   transition-duration: 0s;
 }
 
@@ -51,18 +51,18 @@ window#waybar {
   padding-left: 4px;
   padding-right: 4px;
 }
-  
+
+#cpu.loaded #memory.loaded #battery.critical{
+  background-color: #BF616A;
+  color: #ffffff;
+}
+
 #battery.good {
   background-color: #A3BE8C;
 }
 
 #battery.warning {
   background-color: #EBCB8B;
-}
-
-#battery.critical {
-  color: #ffffff;
-  background-color: #BF616A;
 }
 
 #battery.charging  {
